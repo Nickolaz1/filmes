@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Montserrat:wght@300;400&family=Nunito+Sans&display=swap');
+
+/*
+    font-family: 'Hanken Grotesk', sans-serif; (médio, destaque)
+    font-family: 'Montserrat', sans-serif; (titulos h1, h2)
+    font-family: 'Nunito Sans', sans-serif; (textos p)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DCDCDC;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #1C1C1C;
+}
+
+.titulo-pagina {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #EEE8AA;
+}
+
+.lista-endpoints {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.endpoints {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.endpoints a {
+    text-decoration: none;
+    color: #EEE8AA;
+}
+
+.conteudo {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.titulo-apresentacao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1C1C1C;
+}
+
+.tabela-filmes {
+    border: 1px solid #FF8C00;
+}
+
+td {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.btn-editar {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #6A5ACD;
+    color: #DCDCDC;
+    border-radius: 5px;
+}
+
+.btn-deletar {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #B22222;
+    color: #DCDCDC;
+    border-radius: 5px;
+}
+
+
+

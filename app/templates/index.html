@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/camera.png') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-pagina">Flask Filmes Studio</h1>
+        <nav class="menu-navegacao">
+            <ul class="lista-endpoints">
+                <li class="endpoints"><a href="/">Home</a></li>
+                <li class="endpoints"><a href="/cadastrar">Cadastrar Filme</a></li>
+                <li class="endpoints"><a href="/sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="conteudo">
+            <h2 class="titulo-apresentacao">Todos os nossos filmes cadastrados</h2>
+            <table class="tabela-filmes" border="1px">
+                <thead>
+                    <tr>
+                        <td>Titulo</td>
+                        <td>Diretor</td>
+                        <td>Resumo</td>
+                        <td>Data de Lançamento</td>
+                        <td>Nota</td>
+                        <td>Ações</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in range(0, qtde) %}
+                        <tr>
+                            <td>{{ filmes[i].titulo }}</td>
+                            <td>{{ filmes[i].diretor }}</td>
+                            <td>{{ filmes[i].resumo }}</td>
+                            <td>{{ filmes[i].data }}</td>
+                            <td>{{ filmes[i].nota }}</td>
+                            <td>
+                                <a class="btn-editar" href="#">Editar</a>
+                                <a class="btn-deletar" href="/{{ i }}">Deletar</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

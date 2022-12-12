@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Montserrat:wght@300;400&family=Nunito+Sans&display=swap');
+
+/*
+    font-family: 'Hanken Grotesk', sans-serif; (médio, destaque)
+    font-family: 'Montserrat', sans-serif; (titulos h1, h2)
+    font-family: 'Nunito Sans', sans-serif; (textos p)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DCDCDC;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #1C1C1C;
+}
+
+.titulo-pagina {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #EEE8AA;
+}
+
+.lista-endpoints {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.endpoints {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.endpoints a {
+    text-decoration: none;
+    color: #EEE8AA;
+}
+
+.conteudo {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.titulo-apresentacao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1C1C1C;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.form-cadastro label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+
+.form-cadastro input {
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#titulo {
+    margin-left: 60px;
+}
+
+#diretor {
+    margin-left: 52px;
+}
+
+#resumo {
+    margin-left: 48px;
+}
+
+#data {
+    margin-left: 15px;
+}
+
+#nota {
+    margin-left: 70px;
+}
+
+.form-cadastro button {
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0px;
+    background-color:#4169E1;
+    color: #DCDCDC;
+}

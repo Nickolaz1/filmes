@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Montserrat:wght@300;400&family=Nunito+Sans&display=swap');
+
+/*
+    font-family: 'Hanken Grotesk', sans-serif; (médio, destaque)
+    font-family: 'Montserrat', sans-serif; (titulos h1, h2)
+    font-family: 'Nunito Sans', sans-serif; (textos p)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DCDCDC;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #1C1C1C;
+}
+
+.titulo-pagina {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #EEE8AA;
+}
+
+.lista-endpoints {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.endpoints {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.endpoints a {
+    text-decoration: none;
+    color: #EEE8AA;
+}
+
+.conteudo {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.titulo-apresentacao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1C1C1C;
+}
+
+.caixa-texto {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.paragrafo {
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.link-freepik {
+    text-decoration: none;
+    color: #FF8C00;
+}

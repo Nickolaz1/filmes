@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/camera.png') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-pagina">Flask Filmes Studio</h1>
+        <nav class="menu-navegacao">
+            <ul class="lista-endpoints">
+                <li class="endpoints"><a href="/">Home</a></li>
+                <li class="endpoints"><a href="/cadastrar">Cadastrar Filme</a></li>
+                <li class="endpoints"><a href="/sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="conteudo">
+            <h2 class="titulo-apresentacao">Cadastre um novo filme</h2>
+            <form class="form-cadastro" action="/" method="post">
+                <div>
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
+                <div>
+                    <label for="diretor">Diretor</label>
+                    <input type="text" name="diretor" id="diretor">
+                </div>
+                <div>
+                    <label for="resumo">Resumo</label>
+                    <input type="text" name="resumo" id="resumo">
+                </div>
+                <div>
+                    <label for="data">Lançamento</label>
+                    <input type="text" name="data" id="data">
+                </div>
+                <div>
+                    <label for="nota">Nota</label>
+                    <input type="text" name="nota" id="nota">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
